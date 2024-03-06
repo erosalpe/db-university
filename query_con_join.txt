@@ -20,9 +20,10 @@ FROM departments
 JOIN degrees
 ON degrees.department_id = departments.id
 JOIN courses
-ON courses.degree_id = courses.id
+ON courses.degree_id = degrees.id
 WHERE departments.name = 'Dipartimento di Neuroscienze'
 AND degrees.level = 'Magistrale';
+
 
 
 
